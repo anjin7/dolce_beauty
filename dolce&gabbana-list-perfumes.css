@@ -1,0 +1,455 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "나눔스퀘어_ac", "나눔스퀘어", 'nanumsquare','NanumSquare_ac','arial', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {list-style: none;}
+
+button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+/*  보더  */
+/*
+.header {border: 4px solid black}
+.header .header-nav {border: 4px solid red}
+.header .nav-sub {border: 4px solid blue;}
+.header .nav-sub1 .nav-menu {border: 2px solid skyblue}
+.header .nav-sub1 {border: 4px solid orange}
+.header .nav-sub2 .nav-menu {border: 2px solid navy}
+.header .nav-sub2 {border: 4px solid orange}
+.header .header-logo {border: 4px solid blue}
+.header .header-logo-img {border: 4px solid white}
+.header .nav-main {border: 4px solid green}
+.header .nav-main .nav-menu {border: 2px solid cyan}
+
+.banner {border: 4px solid violet;}
+.banner .banner-list {border: 4px solid cyan;}
+.banner .banner-btn-circle{border: 4px solid red;}
+
+
+.product {border: 4px solid red;}
+*/
+
+/*  헤더  */
+.header {background-color: gray;}
+
+.header .nav-menu a {
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+/*  서브 네비 */
+.header .nav-sub {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 0;    
+}
+.header .nav-sub .nav-menu a { 
+    font-family:  'arial';
+    font-size: 14px;
+}
+.header .nav-sub1 {
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    left: 0;
+}
+.header .nav-sub1 .nav-menu { display: inline-block;}
+.header .nav-sub1 .change {
+    background-color: #fff;
+    text-align: left;
+    width: 152px;
+    height: auto;
+    line-height: 1.75;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 12px;
+    color: #000;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;    
+    visibility:hidden;
+    transition: all 0.3s
+}
+.header .nav-sub1:hover .change {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .nav-sub2 {
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+.header .nav-sub2 .nav-menu {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+/* 헤더 로고 */
+.header .header-logo {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 12px 100px;
+}
+.header .header-logo-title {
+    color: white;
+    font-size: 14px;
+    font-family:  'arial';
+}
+.header .header-logo img {
+    margin: 10px 0 0 0;
+    height: 32px;
+    width: 332px;
+}
+
+
+/* 메인 네비 */
+.header .nav-main {
+    text-align: center;
+    background-color: black;
+    border: 1px solid gray;
+    height: 40px;
+}
+.header .nav-main .nav-menu {
+    display: inline-block;
+    padding: 8px 35px;
+
+}
+.header .nav-main .nav-menu a{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.05;
+    color: #bdbdbd;
+}
+.header .nav-main .nav-menu:hover a {
+    color: #fff;
+    text-decoration: underline;
+}
+.header .nav-main .nav-main-sub {
+    width: 980px;
+    text-align: left;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    line-height: 2.5;
+    margin-top: 7px;
+    padding: 40px 0 40px 200px;
+    left: 50%;
+    margin-left: -590px; 
+    opacity: 0;
+    visibility:hidden;
+    transition: all 0.3s;
+}
+.nav-main .nav-menu:hover .nav-main-sub {
+    opacity: 1;
+    visibility: visible;
+}
+.nav-main .nav-main-sub h3 { font-size: 16px; }
+.nav-main .nav-main-sub h4 {
+    font-size: 14px;
+    color: #757575;    
+}
+
+
+/*  배너 영역  */
+/*  top 배너 */
+.banner-top {
+    height: 400px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.banner-top .banner-top-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: -25px;
+    margin-left: -117px;
+}
+.banner-top .banner-top-title a{color: #fff;}
+.banner-top .banner-top-list {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* 바닥 배너*/
+.banner-bottom {
+    height: 400px;
+    margin-top: 80px;
+}
+.banner-bottom .banner-bottom-list {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/*  목록 네비  */
+.list-nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.list-nav-title {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: -0.05;
+    font-weight: 900;
+}
+.list-nav .list-nav-line1 {    
+    height: 2px;
+    width: 1180px;
+    background-color: #e0e0e0;
+    margin: 4px auto;
+    margin-top: 20px;
+}
+.list-nav .list-nav-line2 {    
+    height: 1px;
+    width: 1180px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -590px;    
+}
+.list-nav .list-nav-line3 {    
+    height: 2px;
+    width: 1180px;
+    background-color: #f5f5f5;
+    margin: 10px auto;
+}
+
+
+
+/*  목록 메인 네비 */
+
+.list-nav-main .list-nav-main-title {
+    font-size: 18px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 56px;
+    margin-left: 10px;
+}
+.list-nav-main .list-nav-main-ol {   
+    float: left;
+    margin-right: 120px;
+}
+.list-nav-main .list-nav-main-ol.all {margin-right: 110px;}
+
+.list-nav-main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.list-nav-main-ul {padding-left: 20px;}
+.list-nav-main-li {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #757575;
+}
+
+
+/*  리스트 서브 네비 */
+.list-nav .list-nav-sub {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 0;    
+}
+.list-nav .list-nav-sub1 {
+    text-align: center;
+    position: absolute;
+    top: 13px;
+    left: 0;
+}
+.list-nav .list-nav-sub1 .nav-menu a { 
+    font-family:  'arial';
+    font-size: 16px;
+    font-weight: 700;
+    color: #757575;
+}
+.list-nav .list-nav-sub1 .nav-menu { 
+    display: inline-block;
+    padding: 0 20px;
+}
+.list-nav .list-nav-sub1 .material-icons {font-size: 18px;}
+
+.list-nav .list-nav-sub1 .nav-menu .active {
+    color: #000;
+    font-weight: 900;
+}
+
+
+
+
+/* 목록 서브 네비*/
+.list-nav-sub2 {
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    margin-right: 30px;
+}
+
+.list-nav-sub2 .material-icons {
+    border: 1px solid #bdbdbd;
+    padding: 4px;
+    color: #757575;
+    margin-left: 8px;
+}
+.list-nav .list-nav-sub2 .material-icons.active  {
+    color: #000;
+    background-color: #e0e0e0;
+}
+
+
+/*  제품 리스트 */
+.product {
+    width: 1200px;
+    margin: 20px auto;
+}
+.product .product-ol::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.product .product-list {
+    float: left;
+    width: 340px;
+    margin: 20px 30px;
+}
+.product .product-list .product-list-thum {
+    width: 340px;
+    height: 340px;
+}
+.product .product-list-subtitle{
+    color: #757575;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.product .product-list-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+    margin-top: 12px;
+}
+.product .product-list-price{
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+/* 목록 페이지 */
+.product .list-paging {
+    text-align: center;
+    margin-top: 40px;
+}
+.product .list-paging-before {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.product .list-paging .material-icons {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #757575;
+}
+.product .list-paging-number { display: inline-block;}
+.product .list-paging-number li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0 -5px;
+    color: #757575;
+    font-size: 16px
+}
+.product .list-paging-number li.active {
+    color: #000;
+    font-weight: 700;
+    border-bottom: 1px solid #757575;
+}
+.product .list-paging-after {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*  footer  */
+footer {
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'arial';
+    font-size: 14px;
+}
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 16px
+}
+.footer a {
+    font-family: 'arial';
+    font-size: 12px;
+    color: #fff;}
+
+
+/*  footer 로고  */
+.footer .footer-logo {
+    text-align: center;
+    font-size: 10px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.footer .footer-logo img {
+    height: 22px;
+    width: 218px;
+    margin-top: 8px;
+}
+.footer .footer-line {
+    background-color: #bdbdbd;
+    width: 2px;
+    height: 64px;
+    float: left;
+    margin: 2px 30px;
+}
+/*  footer 리스트 */
+.footer .footer-ol {float: left}
+.footer .follow-icon {
+    display: inline;
+    padding-right: 12px;
+}
+.footer .follow-list .follow-icon img{ 
+    display: inline;
+    margin-bottom: -4px;
+}
+.footer .footer-sitemap {margin: 8px 0;}
+.footer .footer-copyright {font-size: 12px;}
